@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Experience</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe-ar.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Escanea el código QR para ver el contenido en AR</h1>
+    <a-scene embedded>
+        <a-marker preset="hiro">
+            <a-entity id="ar-content"></a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+        <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+</body>
+</html>
